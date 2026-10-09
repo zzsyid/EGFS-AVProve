@@ -66,24 +66,3 @@ python rq1_eval/verify_m7_authenticated_claim_locator_v2.py --help
 python rq1_eval/evaluate_n1000_state_correctness.py --help
 ```
 
-## Reproducibility scope
-
-The package preserves the implementation and frozen experiment policies while
-excluding large intermediate products. Exact reproduction additionally requires
-the original datasets, external model checkpoints, generated attack media, and
-manifests described in `docs/REPRODUCIBILITY.md`.
-
-Historical pilots, plotting utilities, paper-table exporters, baseline runners,
-ablation code, and superseded carrier/verifier implementations are intentionally
-absent. They are not required to execute the released method.
-
-## Privacy
-
-All local usernames, machine paths, e-mail addresses, credentials, raw media,
-and review materials are excluded or anonymized. Run the included privacy scan
-before publishing a modified release.
-
-## License
-
-No open-source license has been selected in this package. Add the intended
-license before making the repository public.

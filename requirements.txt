@@ -1,0 +1,14 @@
+cryptography
+matplotlib
+numpy
+opencv-python
+pandas
+Pillow
+PyYAML
+scikit-image
+scipy
+soundfile
+torch
+torchaudio
+torchvision
+transformers

@@ -1,0 +1,7 @@
+# Install only for the corresponding evidence extractor.
+insightface
+openai-whisper
+speechbrain
+
+# AudioSeal, VideoSeal, AniPortrait, EchoMimicV3, LivePortrait, and kNN-VC are
+# installed from their upstream repositories and are not vendored here.

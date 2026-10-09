@@ -1,0 +1,40 @@
+{
+  "schema": "tdsc-m7-authenticated-claim-locator-v2",
+  "audio": {
+    "backbone": "AudioSeal audioseal_wm_16bits",
+    "locator_bits": 32,
+    "packet_format": "2-bit index || 8-bit data || 6-bit keyed CRC",
+    "packet_count": 4,
+    "embed_window_sec": 0.75,
+    "embed_hop_sec": 0.75,
+    "decode_window_sec": 0.75,
+    "decode_hop_sec": 0.1875,
+    "edge_guard_sec": 0.2
+  },
+  "video": {
+    "backbone": "VideoSeal",
+    "locator_bits": 24,
+    "message_capacity_bits": 256,
+    "encoding": "cyclic repetition across the VideoSeal message",
+    "decoder": "temporal aggregation followed by per-bit majority vote",
+    "candidate_hamming_radius": 2,
+    "scaling_w": 0.8
+  },
+  "binding": {
+    "signed_fields": [
+      "claim_locator_policy",
+      "claim_family_sha256",
+      "claim_version",
+      "claim_locator_salt",
+      "authenticated_claim_locator_hex",
+      "previous_registry_record_sha256"
+    ],
+    "verified_requires": [
+      "valid registry signature",
+      "authenticated locator resolution",
+      "source and enrollment scope",
+      "positive semantic and window support",
+      "no hard semantic conflict"
+    ]
+  }
+}

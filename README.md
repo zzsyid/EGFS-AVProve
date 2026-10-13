@@ -66,6 +66,7 @@ python rq1_eval/verify_m7_authenticated_claim_locator_v2.py --help
 python rq1_eval/evaluate_n1000_state_correctness.py --help
 ```
 If you find us work useful, please cite our work
+```
 @ARTICLE{11733953,
   author={Ma, Zeping and Zhang, Xudong and Hu, Yunfan and Li, Guoyu and Zhu, Guosong and Qin, Zhen},
   journal={IEEE Transactions on Dependable and Secure Computing}, 
@@ -75,3 +76,4 @@ If you find us work useful, please cite our work
   number={},
   pages={1-15},
   doi={10.1109/TDSC.2026.3742785}}
+```
